@@ -1,0 +1,65 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.springframework:spring-instrument
+    versions:
+    - 5.3.3
+    - 5.3.4
+    - 5.3.5
+  - dependency-name: org.springframework:spring-core
+    versions:
+    - 5.3.3
+    - 5.3.4
+    - 5.3.5
+  - dependency-name: org.springframework:spring-context-support
+    versions:
+    - 5.3.3
+    - 5.3.4
+    - 5.3.5
+  - dependency-name: org.springframework:spring-context
+    versions:
+    - 5.3.3
+    - 5.3.4
+    - 5.3.5
+  - dependency-name: org.springframework:spring-beans
+    versions:
+    - 5.3.3
+    - 5.3.4
+    - 5.3.5
+  - dependency-name: org.springframework:spring-aop
+    versions:
+    - 5.3.3
+    - 5.3.4
+    - 5.3.5
+  - dependency-name: com.salesforce.maven:MavenParent
+    versions:
+    - 2.0.0
+  - dependency-name: org.ow2.asm:asm-util
+    versions:
+    - "9.0"
+  - dependency-name: org.ow2.asm:asm-tree
+    versions:
+    - "9.0"
+  - dependency-name: org.ow2.asm:asm-commons
+    versions:
+    - "9.0"
+  - dependency-name: org.ow2.asm:asm
+    versions:
+    - "9.0"
+  - dependency-name: org.junit.vintage:junit-vintage-engine
+    versions:
+    - 5.7.0
+  - dependency-name: org.junit.jupiter:junit-jupiter-engine
+    versions:
+    - 5.7.0
+  - dependency-name: org.junit.jupiter:junit-jupiter-api
+    versions:
+    - 5.7.0
+  - dependency-name: org.junit.platform:junit-platform-launcher
+    versions:
+    - 1.7.0
